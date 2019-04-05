@@ -42,9 +42,9 @@ class Tweet extends React.Component {
 
   render () {
     const {modalActive, modalIndex} = this.state
-    let {data, linkProps} = this.props, isRT = false
+    let {data, linkProps, bold} = this.props, isRT = false
     let MediaComponent = null, QuoteComponent = null
-    
+
     //Support for extended tweets
     if ('full_text' in data) {
       data.text = data.full_text;
@@ -52,7 +52,7 @@ class Tweet extends React.Component {
       if ('quoted_status' in data) {
         data.quoted_status.text = data.quoted_status.full_text;
       }
-      
+
       if ('retweeted_status' in data) {
         data.retweeted_status.text = data.retweeted_status.full_text;
 
@@ -61,7 +61,7 @@ class Tweet extends React.Component {
         }
       }
     }
-    
+
     if ('extended_tweet' in data) {
       data.text = data.extended_tweet.full_text;
       data.entities = data.extended_tweet.entities;
@@ -92,7 +92,7 @@ class Tweet extends React.Component {
         }
       }
     }
-    
+
     // use retweet as data if its a RT
     if (data.retweeted_status) {
       data = data.retweeted_status
@@ -120,7 +120,7 @@ class Tweet extends React.Component {
         <div className="content" style={styles.content}>
           <Header data={data} linkProps={linkProps} />
           <a style={styles.link} href={`https://twitter.com/${data.user.screen_name}/status/${data.id_str}`} {...linkProps}>
-            <Text data={data} />
+            <Text data={data} bold={bold} />
           </a>
           {MediaComponent}
           {QuoteComponent}

@@ -6,8 +6,8 @@ import twitterText from 'twitter-text'
 
 class Text extends React.Component {
   render () {
-    let {data} = this.props
-    let {text, entities, extended_entities} = data
+    let {data, bold} = this.props
+    let {text, entities, extended_entities } = data
 
     // remove any embedded media links
     if (entities && entities.media) {
@@ -42,6 +42,10 @@ class Text extends React.Component {
       })
     }
 
+    if (bold) {
+      var stringStart = string.search(new RegExp(bold, 'ig'))
+      text = `${text.substr(0, stringStart)}<strong>${bold}</strong>${text.substr(stringStart+bold.length)}`
+    }
 
     const tweetProps = {
       'className': 'tweet-text',
