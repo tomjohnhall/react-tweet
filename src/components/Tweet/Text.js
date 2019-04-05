@@ -43,7 +43,7 @@ class Text extends React.Component {
     }
 
     if (bold) {
-      var stringStart = string.search(new RegExp(bold, 'ig'))
+      var stringStart = text.search(new RegExp(bold, 'ig'))
       text = `${text.substr(0, stringStart)}<strong>${bold}</strong>${text.substr(stringStart+bold.length)}`
     }
 
