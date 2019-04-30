@@ -44,7 +44,9 @@ class Text extends React.Component {
 
     if (bold) {
       var stringStart = text.search(new RegExp(bold, 'ig'))
-      text = `${text.substr(0, stringStart)}<strong>${bold}</strong>${text.substr(stringStart+bold.length)}`
+      if (stringStart >= 0) {
+        text = `${text.substr(0, stringStart)}<strong>${bold}</strong>${text.substr(stringStart+bold.length)}`
+      }
     }
 
     const tweetProps = {
