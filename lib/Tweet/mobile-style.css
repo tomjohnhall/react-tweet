@@ -1,22 +1,15 @@
 @media only screen and (min-width: 768px) {
     .tweet {
-        background-color: #ffffff;
         min-height: 51px;
         max-width: 588px;
         min-width: 350px;
-        border-bottom: 1px solid #e6ecf0;
-        color: #14171a;
-        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
         font-size: 14px;
         line-height: 20px;
-        list-style-image: none;
-        list-style-position: outisde;
-        list-style-type: none;
         padding: 9px 12px;
-        position: relative;
-        text-align: start;
       }
-      
+  .ProfileTweetAction{
+    width: 80px;
+  }
 } 
 
 .tweet {
@@ -109,7 +102,7 @@
 }
 .ProfileTweetAction {
   display: inline-block;
-  width: 80px
+  margin-right: 10px;
 }
 .ProfileTweetActionBtn {
   display: inline-block;
