@@ -8,9 +8,10 @@ import Modal from './Modal'
 import Quote from './Quote'
 import Footer from './Footer'
 import styles from './styles'
+import style from './mobile-style.css'
 
 class Tweet extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.toggleModal = this.toggleModal.bind(this)
     this.closeModal = this.closeModal.bind(this)
@@ -20,29 +21,29 @@ class Tweet extends React.Component {
     }
   }
 
-  toggleModal (idx) {
+  toggleModal(idx) {
     this.setState({
       'modalActive': true,
       'modalIndex': idx
     })
   }
 
-  closeModal () {
+  closeModal() {
     this.setState({
       'modalActive': false
     })
   }
 
-  getChildContext () {
+  getChildContext() {
     return {
       'toggleModal': this.toggleModal,
       'closeModal': this.closeModal
     }
   }
 
-  render () {
-    const {modalActive, modalIndex} = this.state
-    let {data, linkProps, bold} = this.props, isRT = false
+  render() {
+    const { modalActive, modalIndex } = this.state
+    let { data, linkProps, bold } = this.props, isRT = false
     let MediaComponent = null, QuoteComponent = null
 
     //Support for extended tweets
@@ -101,7 +102,7 @@ class Tweet extends React.Component {
 
     // use Media component if media entities exist
     if (data.entities && data.entities.media) {
-      MediaComponent = <Media  autoPlay={this.props.autoPlay} media={data.entities.media} />
+      MediaComponent = <Media autoPlay={this.props.autoPlay} media={data.entities.media} />
     }
 
     // extended_entities override, these are multi images, videos, gifs
@@ -111,11 +112,11 @@ class Tweet extends React.Component {
 
     // use Quote component if quoted status exists
     if (data.quoted_status) {
-      QuoteComponent = <Quote data={data.quoted_status} linkProps={linkProps}/>
+      QuoteComponent = <Quote data={data.quoted_status} linkProps={linkProps} />
     }
 
     return (
-      <div className="tweet" style={styles.tweet}>
+      <div className="tweet" style={style}>
         {isRT ? <Context {... this.props} /> : null}
         <div className="content" style={styles.content}>
           <Header data={data} linkProps={linkProps} />
@@ -127,7 +128,7 @@ class Tweet extends React.Component {
           <Footer data={data} linkProps={linkProps} />
         </div>
         {modalActive ? <Modal data={data} modalIndex={modalIndex} /> : null}
-      </div>
+      </div >
     )
   }
 }

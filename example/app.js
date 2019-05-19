@@ -7,8 +7,8 @@ import tweets from './tweets'
 const linkProps = { target: '_blank' };
 
 ReactDom.render((
-  <div className="ExamplePage" style={{'width': '590px', 'margin': '0 auto'}}>
-    <div className="tweet-stream" style={{'width': '100%'}}>
+  <div className="ExamplePage" style={{ 'width': '590px', 'maxWidth': '100%', 'margin': '0 auto' }}>
+    <div className="tweet-stream" style={{ 'width': '100%' }}>
       {tweets.map((t, i) => (
         <Tweet autoPlay={true} data={t} key={i} linkProps={linkProps} />
       ))}
