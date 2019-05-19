@@ -1,6 +1,6 @@
 {
   "name": "react-tweet",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "description": "React.js component for rendering tweets as they are presented on Twitter.com",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/artnotfound/react-tweet"
+    "url": "https://github.com/tomjohnhall/react-tweet"
   },
   "author": "Manny404",
   "license": "MIT",
