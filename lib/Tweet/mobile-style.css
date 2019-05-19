@@ -38,220 +38,220 @@
 .content {
     margin-left: 58px
   }
-  .context {
-    margin: -3px 0 3px 34px
-  }
-  .accountGroup {
-    color: #8899a6;
-    text-decoration: none
-  }
-  .avatar {
-    float: left;
-    margin-top: 3px;
-    margin-left: -58px;
-    width: 48px;
-    height: 48px;
-    border-radius: 24px;
-    border: 0
-  }
-  .fullname {
-    font-weight: bold;
-    color: #14171a 
-  }
-  .username {
-    direction: ltr;
-    unicode-bidi: embed;
-    font-size: 14px;
-    color: #657786
-  }
-  .s {
-    color: #b1bbc3;
-    text-decoration: none
-  }
-  .b {
-    font-weight: normal
-  }
-  .time {
-    color: #657786
-  }
-  .retweet {
-    color: #657786;
-    font-size: 12px;
-    line-height: 16.5px;
-    margin-left: 8px
-  }
-  .link {
-    text-decoration: none
-  }
-  .timestamp {
-    font-size: 14px;
-    text-decoration: none;
-    color: #8899a6
-  }
-  .tweetText {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    color: #14171a;
-    margin: 0
-  }
-  .footer {
-    display: table;
-    width: 100%;
-    font-size: 12px;
-    padding-top: 1px
-  }
-  .ProfileTweetActionList {
-    font-size: 0em;
-    line-height: 1;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    display: block
-  }
-  .ProfileTweetAction {
-    display: inline-block;
-    width: 80px
-  }
-  .ProfileTweetActionBtn {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 1;
-    padding: 0 2px;
-    position: relative;
-    border: 0;
-    background: transparent;
-    margin: 0;
-    -webkit-appearance: button;
-    cursor: pointer
-  }
-  .ProfileTweetActionCount {
-    color: #657786;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: bold;
-    margin-left: 6px;
-    position: relative;
-  }
-  .IconContainer {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .IconTextContainer {
-    display: inline-block;
-  }
-  .Icon {
-    background: transparent;
-    display: inline-block;
-    font-style: normal;
-    position: relative;
-  }
-  .IconContext {
-    background: #77b255;
-    display: inline-block;
-    font-style: normal;
-    vertical-align: middle;
-    position: relative;
-    width: 15px;
-    height: 14px;
-    fill: white;
-    border-radius: 2px
-  }
-  .AdaptiveMedia {
-    display: inline-block;
-    max-height: 508px;
-    max-width: 508px;
-    margin: 10px 0 0 0;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 5px;
-    vertical-align: top;
-    text-align: center;
-    width: 100%
-  }
-  .AdaptiveMediaBadge {
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    bottom: 52px;
-    left: 80px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    color: #fff;
-    height: 20px;
-    line-height: 20px;
-    font-weight: 700;
-    padding: 0 5px;
-    position: absolute;
-    z-index: 1
-  }
-  img {
-    width: 100%
-  }
-  .QuoteTweet {
-    margin-top: 12px;
-    border: solid 1px #e6ecf0;
-    cursor: pointer;
-    border-radius: 4px;
-    position: relative
-  }
-  .QuoteTweet:hover {
-    border: solid 1px #aab8c2;
-  }
-  .QuoteLink {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%
-  }
-  .QuoteTweetInner {
-    padding: 12px
-  }
-  .QuoteTweetAuthor {
-    display: inline-block;
-    max-width: 100%;
-    position: relative;
-    z-Index: 1
-  }
-  .QuoteTweetText {
-    margin-top: 3px;
-    max-height: 78px;
-    max-width: 100%;
-    overflow: hidden;
-    white-space: pre-wrap;
-    word-wrap: break-word
-  }
-  .video {
-    width: 100%;
-    vertical-align: bottom;
-    max-height: 508px;
-    object-fit: contain;
-    background: #000000
-  };
-  .Modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999999999999;
-    overflow-x: hidden;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    display: table;
-    width: 100%;
-    height: 100vh
-  }
-  .ModalClose {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    overflow-x: hidden;
-    text-align: center;
-    display: table;
-    width: 100%;
-    height: 100vh
-  }
-  .ModalInner {
-    display: table-cell;
-    vertical-align: middle;
-    position: relative;
-    z-index: 20
-  }
+.context {
+  margin: -3px 0 3px 34px
+}
+.accountGroup {
+  color: #8899a6;
+  text-decoration: none
+}
+.avatar {
+  float: left;
+  margin-top: 3px;
+  margin-left: -58px;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  border: 0
+}
+.fullname {
+  font-weight: bold;
+  color: #14171a 
+}
+.username {
+  direction: ltr;
+  unicode-bidi: embed;
+  font-size: 14px;
+  color: #657786
+}
+.s {
+  color: #b1bbc3;
+  text-decoration: none
+}
+.b {
+  font-weight: normal
+}
+.time {
+  color: #657786
+}
+.retweet {
+  color: #657786;
+  font-size: 12px;
+  line-height: 16.5px;
+  margin-left: 8px
+}
+.link {
+  text-decoration: none
+}
+.timestamp {
+  font-size: 14px;
+  text-decoration: none;
+  color: #8899a6
+}
+.tweetText {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #14171a;
+  margin: 0
+}
+.footer {
+  display: table;
+  width: 100%;
+  font-size: 12px;
+  padding-top: 1px
+}
+.ProfileTweetActionList {
+  font-size: 0em;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  display: block
+}
+.ProfileTweetAction {
+  display: inline-block;
+  width: 80px
+}
+.ProfileTweetActionBtn {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 2px;
+  position: relative;
+  border: 0;
+  background: transparent;
+  margin: 0;
+  -webkit-appearance: button;
+  cursor: pointer
+}
+.ProfileTweetActionCount {
+  color: #657786;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 6px;
+  position: relative;
+}
+.IconContainer {
+  display: inline-block;
+  vertical-align: middle;
+}
+.IconTextContainer {
+  display: inline-block;
+}
+.Icon {
+  background: transparent;
+  display: inline-block;
+  font-style: normal;
+  position: relative;
+}
+.IconContext {
+  background: #77b255;
+  display: inline-block;
+  font-style: normal;
+  vertical-align: middle;
+  position: relative;
+  width: 15px;
+  height: 14px;
+  fill: white;
+  border-radius: 2px
+}
+.AdaptiveMedia {
+  display: inline-block;
+  max-height: 508px;
+  max-width: 508px;
+  margin: 10px 0 0 0;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 5px;
+  vertical-align: top;
+  text-align: center;
+  width: 100%
+}
+.AdaptiveMediaBadge {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  bottom: 52px;
+  left: 80px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 0 5px;
+  position: absolute;
+  z-index: 1
+}
+.img {
+  width: 100%
+}
+.QuoteTweet {
+  margin-top: 12px;
+  border: solid 1px #e6ecf0;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative
+}
+.QuoteTweet:hover {
+  border: solid 1px #aab8c2;
+}
+.QuoteLink {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+.QuoteTweetInner {
+  padding: 12px
+}
+.QuoteTweetAuthor {
+  display: inline-block;
+  max-width: 100%;
+  position: relative;
+  z-Index: 1
+}
+.QuoteTweetText {
+  margin-top: 3px;
+  max-height: 78px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word
+}
+.video {
+  width: 100%;
+  vertical-align: bottom;
+  max-height: 508px;
+  object-fit: contain;
+  background: #000000
+};
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999999999;
+  overflow-x: hidden;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  display: table;
+  width: 100%;
+  height: 100vh
+}
+.ModalClose {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow-x: hidden;
+  text-align: center;
+  display: table;
+  width: 100%;
+  height: 100vh
+}
+.ModalInner {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 20
+}
